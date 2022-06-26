@@ -1,0 +1,26 @@
+{
+  "name": "pingtest",
+  "version": "1.0.0",
+  "description": "Lightweight and simple URL ping tester for local network",
+  "main": "index.js",
+  "scripts": {
+    "start": "node local.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyventuree/pingtest.git"
+  },
+  "keywords": [
+    "pingtest",
+    "pingtester"
+  ],
+  "author": "shigukk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skyventuree/pingtest/issues"
+  },
+  "homepage": "https://github.com/skyventuree/pingtest#readme",
+  "devDependencies": {
+    "express": "^4.18.1"
+  }
+}

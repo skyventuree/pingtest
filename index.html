@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pingtest</title>
+</head>
+<body>
+    <h1>Pingtest</h1>
+    <h3>Lightweight and simple URL ping tester for local network</h3>
+    <hr>
+    <p>Type the URL into this box and press Add, after added all the URL, press Start!</p>
+
+    <input id="url-text" type="url" name="url" placeholder="https://www.google.com/">
+    <button id="add-url">Add</button>
+    <button id="start-ping">Start</button>
+    
+    <table id="url-list">
+        <tr>
+            <th id="url">URL</th>
+            <th id="status">Status</th>
+            <th id="time">Time (ms)</th>
+            <th id="remove-item">Remove URL?</th>
+        </tr>
+    </table>
+
+    <button id="clear-list" onclick="alert('To avoid accidental press that perform unwanted deletions, please refresh this page using your browser reload button.')">Clear list</button>
+
+    <p>Note: Due to CORS, most of the site will show the status code as 0. This is normal.</p>
+    <hr>
+    <p class="center">Utility made by <a href="https://skyventuree.github.io/">shigukk</a>!</p>
+    <script src="pingtest-util.js"></script>
+</body>
+</html>
