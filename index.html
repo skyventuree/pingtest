@@ -8,15 +8,15 @@
     <title>Pingtest</title>
 </head>
 <body>
+    <base target="_blank" rel="noopener noreferrer">
     <h1>Pingtest</h1>
     <h3>Lightweight and simple URL ping tester for local network</h3>
     <hr>
     <p>Type the URL into this box and press Add, after added all the URL, press Start!</p>
-
-    <input id="url-text" type="url" name="url" placeholder="https://www.google.com/">
+    <p>Ping will be evaluated on this machine/device you are using.</p>
+    <input id="url-text" type="url" name="url" placeholder="Input link, multiple links can be seperated by comma.">
     <button id="add-url">Add</button>
-    <button id="start-ping">Start</button>
-    
+    <p>Tip: If you plan on testing multiple URLs another time, you should make a list of them, seperated by comma for future use!</p>
     <table id="url-list">
         <tr>
             <th id="url">URL</th>
@@ -25,10 +25,9 @@
             <th id="remove-item">Remove URL?</th>
         </tr>
     </table>
-
-    <button id="clear-list" onclick="alert('To avoid accidental press that perform unwanted deletions, please refresh this page using your browser reload button.')">Clear list</button>
-
-    <p>Note: Due to CORS, most of the site will show the status code as 0. This is normal.</p>
+    <button id="start-ping">Start</button>
+    <p>Note: Due to CORS, most of the site will show the status code as 0 for external URLs. This is normal.</p>
+    <p>If the URL failed to respond within 5 seconds, it will be considered as a timeout.</p>
     <hr>
     <p class="center">Utility made by <a href="https://skyventuree.github.io/">shigukk</a>!</p>
     <script src="pingtest-util.js"></script>

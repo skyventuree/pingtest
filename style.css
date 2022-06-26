@@ -13,6 +13,11 @@ input[type="text"], input[type="url"] {
     box-sizing: border-box;
 }
 
+input[type="file"] {
+    width: 100%;
+    height: 32px;
+}
+
 button {
     width: 100%;
     padding: 14px 20px;
@@ -59,7 +64,7 @@ tr, td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #eeeeee;
 }
 
 th#url {width: 50%;}
