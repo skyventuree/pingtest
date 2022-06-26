@@ -15,7 +15,8 @@ document.getElementById("add-url").addEventListener("click", function () {
 function addUrl(url) {
     var table = document.getElementById("url-list");
     url = url.toLowerCase();
-    if (!url.match(/^https?:\/\//)) url="http://"+url;
+    url = url.replace("http://", "https://");
+    if (!url.match(/^https?:\/\//)) url="https://"+url;
     var row = table.insertRow(table.rows.length);
     
     row.insertCell(0).innerHTML = `<a href="${url}">${url}</a>`;
